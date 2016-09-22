@@ -1,10 +1,10 @@
 <section id="portfolio-information" class="padding-top">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <img src="images/portfolio-details/1.jpg" class="img-responsive" alt="">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <div class="project-name overflow">
                         <h2 class="bold">Sailing Vivamus </h2>
                         <ul class="nav navbar-nav navbar-default">

@@ -17,14 +17,27 @@
         <?php include './include/search.php'; ?>  
 
         <div class="container">
-            <?php include './include/left_menu.php'; ?>  
-            <?php include './include/home_container.php'; ?>  
+            <?php include './include/left_menu.php'; ?> 
+
+            <?php
+            if (isset($_GET['url'])) {
+                if ($_GET['url'] == "pictures") {
+                    include './include/galerie.php';
+                }  elseif ($_GET['url'] == "details") {
+                    include './include/details.php';
+                }elseif ($_GET['url'] == "contact") {
+                    include './include/contact.php';
+                }
+            } else {
+                include './include/home_container.php';
+            }
+            ?>  
         </div>        
 
 
 
 <?php include './include/social.php'; ?>  
-<?php include './include/footer.php'; ?>  
+        <?php include './include/footer.php'; ?>  
         <?php include './include/scripts_js.php'; ?> 
     </body>
 </html>
